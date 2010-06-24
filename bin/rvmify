@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+require 'rvmify'
+
+dir = ARGV.shift
+
+abort("No directory found") if dir.nil?
+
+begin
+  Rvmify.generate(File.expand_path(dir))
+rescue => e
+  abort(e.message)
+rescue Timeout::Error => e
+  abort("Request Timeout")
+end
