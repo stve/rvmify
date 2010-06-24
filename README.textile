@@ -1,26 +1,30 @@
-= rvmify
+h1. rvmify
 
 Give each of your projects it's own RVM gemset and use Bundler to install the required gems.
 
 Based on this implementation by Wayne E. Seguin
 http://gist.github.com/439102
 
-= Installation
+h2. Installation
 
 gem install rvmify
 
-= Usage
+h2. Usage
 
+<pre><code>
 cd my_project
 rvmify .
+</code></pre>
 
 Or do it with ruby:
 
+<pre><code>
 Dir.glob("*").each do |dir|
   Rvmify.generate(dir)
 end
+</code></pre>
 
-== Note on Patches/Pull Requests
+h2. Note on Patches/Pull Requests
  
 * Fork the project.
 * Make your feature addition or bug fix.
@@ -30,6 +34,6 @@ end
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-== Copyright
+h2. Copyright
 
 Copyright (c) 2010 Steve Agalloco. See LICENSE for details.
