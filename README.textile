@@ -2,8 +2,7 @@ h1. rvmify
 
 Give each of your projects it's own RVM gemset and use Bundler to install the required gems.
 
-Based on this implementation by Wayne E. Seguin
-http://gist.github.com/439102
+Based on "this implementation":http://gist.github.com/439102 by Wayne E. Seguin
 
 h2. Installation
 
@@ -11,15 +10,13 @@ gem install rvmify
 
 h2. Usage
 
-<pre><code>
-cd my_project
+<pre><code>cd my_project
 rvmify .
 </code></pre>
 
 Or do it with ruby:
 
-<pre><code>
-Dir.glob("*").each do |dir|
+<pre><code>Dir.glob("*").each do |dir|
   Rvmify.generate(dir)
 end
 </code></pre>
