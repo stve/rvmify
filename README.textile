@@ -24,6 +24,17 @@ Dir.glob("*").each do |dir|
 end
 </code></pre>
 
+Make sure you have the following line in the .rvmrc file in your home directory:
+
+<pre><code>
+export rvm_gemset_create_on_use_flag=1
+</code></pre>
+
+h2. Todo
+
+* Use Thor for generators
+* figure out how to handle bundler updates
+
 h2. Note on Patches/Pull Requests
  
 * Fork the project.
