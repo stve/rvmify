@@ -17,8 +17,7 @@ module Rvmify
       ruby_path = `which ruby`.strip
       ruby_version = File.basename(ruby_path.gsub(/\/bin\/ruby/,''))
 
-      gem_home = `echo $GEM_HOME`
-      environment_path = gem_home.gsub('/gems/', '/environments/').strip
+      environment_path = File.join(ENV['rvm_path'], 'environments', ENV['RUBY_VERSION'])
 
       # Project specific .rvmrc file
       contents = <<-END
