@@ -5,24 +5,24 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rvmify}
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Steve Agalloco"]
-  s.date = %q{2010-06-24}
+  s.date = %q{2010-07-02}
   s.default_executable = %q{rvmify}
   s.description = %q{get up and running quickly with rvm, gemsets and bundler}
   s.email = %q{steve.agalloco@gmail.com}
   s.executables = ["rvmify"]
   s.extra_rdoc_files = [
     "LICENSE",
-     "README.rdoc"
+     "README.textile"
   ]
   s.files = [
     ".document",
      ".gitignore",
      "LICENSE",
-     "README.rdoc",
+     "README.textile",
      "Rakefile",
      "bin/rvmify",
      "lib/rvmify.rb",
