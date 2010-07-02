@@ -30,7 +30,9 @@ export rvm_gemset_create_on_use_flag=1
 h2. Todo
 
 * Use Thor for generators
-* figure out how to handle bundler updates
+* Figure out how to handle bundler updates
+* Provide a flag to override the gemset name
+* Play nice with passenger
 
 h2. Note on Patches/Pull Requests
  
