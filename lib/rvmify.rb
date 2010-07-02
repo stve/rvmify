@@ -1,5 +1,5 @@
 module Rvmify
-  VERSION = '0.1.0'
+  VERSION = '0.2.0'
   
   class << self
   
@@ -17,7 +17,7 @@ module Rvmify
       ruby_path = `which ruby`.strip
       ruby_version = File.basename(ruby_path.gsub(/\/bin\/ruby/,''))
 
-      gem_home = `echo $GEM_HOME` # /Users/steve/.rvm/gems/ree-1.8.7-2010.02
+      gem_home = `echo $GEM_HOME`
       environment_path = gem_home.gsub('/gems/', '/environments/').strip
 
       # Project specific .rvmrc file
@@ -28,7 +28,7 @@ else
   rvm --create use "#{ruby_version}"
 fi
 
-[[ -s "#{project_name}.gems" ]] && rvm gemset import #{project_name}.gems
+[[ -s "#{project_name}.gems" ]] && rvm gemset use #{project_name}
 
 bundle install
 END
