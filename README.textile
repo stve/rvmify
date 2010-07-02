@@ -17,7 +17,7 @@ rvmify .
 Or do it with ruby:
 
 <pre><code>Dir.glob("*").each do |dir|
-  Rvmify.generate(dir)
+  RVMify.generate(dir)
 end
 </code></pre>
 

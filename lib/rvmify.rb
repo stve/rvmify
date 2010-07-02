@@ -1,4 +1,4 @@
-module Rvmify
+module RVMify
   VERSION = '0.2.0'
   
   class << self

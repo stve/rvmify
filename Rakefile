@@ -13,7 +13,7 @@ begin
     gem.email = "steve.agalloco@gmail.com"
     gem.homepage = "http://github.com/spagalloco/rvmify"
     gem.authors = ["Steve Agalloco"]
-    gem.version = Rvmify::VERSION
+    gem.version = RVMify::VERSION
     gem.bindir = 'bin'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
@@ -49,7 +49,7 @@ task :default => :test
 require 'rake/rdoctask'
 Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "rvmify #{Rvmify::VERSION}"
+  rdoc.title = "rvmify #{RVMify::VERSION}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
