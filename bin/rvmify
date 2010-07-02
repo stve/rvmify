@@ -1,9 +1,17 @@
 #!/usr/bin/env ruby
 require 'rvmify'
 
+def usage
+  puts "To use rvmify, you must specify a directory."
+  puts
+  puts "Examples: rvmify ."
+  puts "          rmvify /path/to/myproject"
+  abort
+end
+
 dir = ARGV.shift
 
-abort("No directory found") if dir.nil?
+usage if dir.nil?
 
 begin
   Rvmify.generate(File.expand_path(dir))
